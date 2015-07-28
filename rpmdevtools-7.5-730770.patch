@@ -1,0 +1,99 @@
+diff -up rpmdevtools-7.5/spectemplate-dummy.spec.730770 rpmdevtools-7.5/spectemplate-dummy.spec
+--- rpmdevtools-7.5/spectemplate-dummy.spec.730770	2009-05-03 12:03:27.000000000 +0200
++++ rpmdevtools-7.5/spectemplate-dummy.spec	2012-08-28 15:47:17.609930729 +0200
+@@ -6,7 +6,6 @@ Summary:        Dummy test package
+ Group:          Development/Debug
+ License:        Public Domain
+ URL:            http://fedoraproject.org/
+-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+ 
+ %description
+ 
+diff -up rpmdevtools-7.5/spectemplate-lib.spec.730770 rpmdevtools-7.5/spectemplate-lib.spec
+--- rpmdevtools-7.5/spectemplate-lib.spec.730770	2008-01-08 23:18:25.000000000 +0100
++++ rpmdevtools-7.5/spectemplate-lib.spec	2012-08-28 15:48:32.443232569 +0200
+@@ -7,7 +7,6 @@ Group:          System Environment/Libra
+ License:        
+ URL:            
+ Source0:        
+-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+ 
+ BuildRequires:  
+ Requires:       
+diff -up rpmdevtools-7.5/spectemplate-minimal.spec.730770 rpmdevtools-7.5/spectemplate-minimal.spec
+--- rpmdevtools-7.5/spectemplate-minimal.spec.730770	2008-01-08 23:18:25.000000000 +0100
++++ rpmdevtools-7.5/spectemplate-minimal.spec	2012-08-28 15:47:12.932911708 +0200
+@@ -7,7 +7,6 @@ Group:
+ License:        
+ URL:            
+ Source0:        
+-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+ 
+ BuildRequires:  
+ Requires:       
+diff -up rpmdevtools-7.5/spectemplate-ocaml.spec.730770 rpmdevtools-7.5/spectemplate-ocaml.spec
+--- rpmdevtools-7.5/spectemplate-ocaml.spec.730770	2009-07-02 23:32:57.000000000 +0200
++++ rpmdevtools-7.5/spectemplate-ocaml.spec	2012-08-28 15:48:28.852218185 +0200
+@@ -14,7 +14,6 @@ Group:          Development/Libraries
+ License:        
+ URL:            
+ Source0:        
+-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+ 
+ BuildRequires:  ocaml >= 3.10.0
+ BuildRequires:  ocaml-findlib-devel
+diff -up rpmdevtools-7.5/spectemplate-perl.spec.730770 rpmdevtools-7.5/spectemplate-perl.spec
+--- rpmdevtools-7.5/spectemplate-perl.spec.730770	2009-09-03 16:48:08.000000000 +0200
++++ rpmdevtools-7.5/spectemplate-perl.spec	2012-08-28 15:47:08.826894998 +0200
+@@ -7,7 +7,6 @@ Group:          Development/Libraries
+ License:        
+ URL:            
+ Source0:        
+-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+ 
+ BuildArch:      
+ # Correct for lots of packages, other common choices include eg. Module::Build
+diff -up rpmdevtools-7.5/spectemplate-php-pear.spec.730770 rpmdevtools-7.5/spectemplate-php-pear.spec
+--- rpmdevtools-7.5/spectemplate-php-pear.spec.730770	2009-07-07 20:01:40.000000000 +0200
++++ rpmdevtools-7.5/spectemplate-php-pear.spec	2012-08-28 15:48:25.010202784 +0200
+@@ -10,7 +10,6 @@ Group:
+ License:        
+ URL:            http://pear.php.net/package/%{pear_name}
+ Source0:        http://pear.php.net/get/%{pear_name}-%{version}.tgz
+-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+ 
+ BuildArch:      noarch
+ BuildRequires:  php-pear >= 1:1.4.9-1.2
+diff -up rpmdevtools-7.5/spectemplate-python.spec.730770 rpmdevtools-7.5/spectemplate-python.spec
+--- rpmdevtools-7.5/spectemplate-python.spec.730770	2009-04-03 19:10:37.000000000 +0200
++++ rpmdevtools-7.5/spectemplate-python.spec	2012-08-28 15:47:02.864870708 +0200
+@@ -11,7 +11,6 @@ Group:          Development/Languages
+ License:        
+ URL:            
+ Source0:        
+-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+ 
+ BuildArch:      
+ BuildRequires:  python-devel
+diff -up rpmdevtools-7.5/spectemplate-R.spec.730770 rpmdevtools-7.5/spectemplate-R.spec
+--- rpmdevtools-7.5/spectemplate-R.spec.730770	2009-06-12 21:34:56.000000000 +0200
++++ rpmdevtools-7.5/spectemplate-R.spec	2012-08-28 15:48:21.779189822 +0200
+@@ -15,7 +15,6 @@ Group:          Applications/Engineering
+ License:        
+ URL:            http://cran.r-project.org/web/packages/%{packname}/
+ Source0:        ftp://cran.r-project.org/pub/R/contrib/main/%{packname}_%{version}-%{packrel}.tar.gz
+-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+ 
+ BuildArch:      
+ BuildRequires:  R-devel
+diff -up rpmdevtools-7.5/spectemplate-ruby.spec.730770 rpmdevtools-7.5/spectemplate-ruby.spec
+--- rpmdevtools-7.5/spectemplate-ruby.spec.730770	2009-04-03 19:10:37.000000000 +0200
++++ rpmdevtools-7.5/spectemplate-ruby.spec	2012-08-28 15:46:54.764837656 +0200
+@@ -11,7 +11,6 @@ Group:          Development/Languages
+ License:        
+ URL:            
+ Source0:        
+-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+ 
+ BuildArch:      
+ BuildRequires:  ruby ruby-devel
